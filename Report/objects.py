@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 from bs4 import BeautifulSoup
-from .params import subj_alias
 from .funcs import fetch_grade
 import locale
 
