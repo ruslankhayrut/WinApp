@@ -196,9 +196,7 @@ class MyWindow(QtWidgets.QMainWindow):
         r = requests.post('https://features.li79.ru/journal/lcheck', data)
         r = r.json()
 
-        if r['status']:
-            return True
-        return False
+        return r.get('status')
 
 
 
