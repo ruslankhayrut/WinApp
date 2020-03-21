@@ -1,0 +1,1624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>950</width>
+    <height>815</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>950</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>950</width>
+    <height>850</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>EduTatar</string>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>160</height>
+       </size>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>20</y>
+         <width>71</width>
+         <height>33</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Логин</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="login">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>20</y>
+         <width>181</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>70</y>
+         <width>91</width>
+         <height>33</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Пароль</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="password">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>70</y>
+         <width>181</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="saveCred">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>110</y>
+         <width>121</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Запомнить</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>750</x>
+         <y>20</y>
+         <width>151</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Dev: Ruslan Khayrutdinov</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>750</x>
+         <y>40</y>
+         <width>161</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>onsunday1703@gmail.com</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>250</height>
+       </size>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="check_journals">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <attribute name="title">
+        <string>Проверить журналы</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QGroupBox" name="groupBox_4">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>300</width>
+            <height>85</height>
+           </size>
+          </property>
+          <property name="title">
+           <string/>
+          </property>
+          <widget class="QLabel" name="label_5">
+           <property name="geometry">
+            <rect>
+             <x>120</x>
+             <y>30</y>
+             <width>82</width>
+             <height>27</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>87</width>
+             <height>27</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Классы</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="class1">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>30</y>
+             <width>80</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>11</number>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_6">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>30</y>
+             <width>8</width>
+             <height>33</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>-</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="class2">
+           <property name="geometry">
+            <rect>
+             <x>330</x>
+             <y>30</y>
+             <width>80</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>11</number>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_3">
+           <property name="geometry">
+            <rect>
+             <x>460</x>
+             <y>30</y>
+             <width>103</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Четверти</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="term1">
+           <property name="geometry">
+            <rect>
+             <x>580</x>
+             <y>30</y>
+             <width>80</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>4</number>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_4">
+           <property name="geometry">
+            <rect>
+             <x>670</x>
+             <y>30</y>
+             <width>8</width>
+             <height>33</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>-</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="term2">
+           <property name="geometry">
+            <rect>
+             <x>690</x>
+             <y>30</y>
+             <width>80</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="acceptDrops">
+            <bool>false</bool>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>4</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAsNeeded</enum>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>877</width>
+             <height>1054</height>
+            </rect>
+           </property>
+           <layout class="QFormLayout" name="formLayout">
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="label_7">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="font">
+               <font>
+                <family>Calibri</family>
+                <pointsize>16</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Параметры проверки</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <spacer name="verticalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>30</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="2" column="0">
+             <widget class="QCheckBox" name="check_RO">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Calibri</family>
+                <pointsize>14</pointsize>
+               </font>
+              </property>
+              <property name="acceptDrops">
+               <bool>false</bool>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::RightToLeft</enum>
+              </property>
+              <property name="text">
+               <string>После Контрольной Работы должна быть Работа над Ошибками</string>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="tristate">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>5</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="4" column="0">
+             <widget class="QCheckBox" name="check_meta">
+              <property name="font">
+               <font>
+                <family>Calibri</family>
+                <pointsize>14</pointsize>
+               </font>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::RightToLeft</enum>
+              </property>
+              <property name="text">
+               <string>Заполнены ли темы уроков и ДЗ</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>7</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="6" column="0">
+             <widget class="QCheckBox" name="check_lessons_fill">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Calibri</family>
+                <pointsize>14</pointsize>
+               </font>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::RightToLeft</enum>
+              </property>
+              <property name="text">
+               <string>Количество выставленных за урок оценок</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="0" colspan="2">
+             <widget class="QGroupBox" name="groupBox">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>500</width>
+                <height>170</height>
+               </size>
+              </property>
+              <property name="title">
+               <string>Доп. параметры</string>
+              </property>
+              <widget class="QLabel" name="label_11">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>30</y>
+                 <width>709</width>
+                 <height>30</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Минимальный процент выставленных за урок оценок (не включая Н и Б)</string>
+               </property>
+              </widget>
+              <widget class="QSpinBox" name="lesson_percent">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="geometry">
+                <rect>
+                 <x>750</x>
+                 <y>30</y>
+                 <width>100</width>
+                 <height>30</height>
+                </rect>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>70</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="wrapping">
+                <bool>false</bool>
+               </property>
+               <property name="specialValueText">
+                <string/>
+               </property>
+               <property name="suffix">
+                <string>%</string>
+               </property>
+               <property name="prefix">
+                <string/>
+               </property>
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="maximum">
+                <number>100</number>
+               </property>
+               <property name="value">
+                <number>25</number>
+               </property>
+               <property name="label" stdset="0">
+                <string>ssg</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_12">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>70</y>
+                 <width>461</width>
+                 <height>28</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Предметы, где &quot;ПР&quot; не требует колонки оценок</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="allowed_not_row">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>110</y>
+                 <width>500</width>
+                 <height>30</height>
+                </rect>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>500</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>500</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="inputMask">
+                <string/>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="frame">
+                <bool>true</bool>
+               </property>
+               <property name="echoMode">
+                <enum>QLineEdit::Normal</enum>
+               </property>
+               <property name="placeholderText">
+                <string>напр: Алгебра, Геометрия, Математика</string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item row="10" column="0">
+             <spacer name="verticalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>25</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="11" column="0">
+             <widget class="QCheckBox" name="check_students_fill">
+              <property name="font">
+               <font>
+                <family>Calibri</family>
+                <pointsize>14</pointsize>
+               </font>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::RightToLeft</enum>
+              </property>
+              <property name="text">
+               <string>Количество оценок у ученика за четверть</string>
+              </property>
+             </widget>
+            </item>
+            <item row="12" column="0" colspan="2">
+             <widget class="QGroupBox" name="groupBox_2">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>500</width>
+                <height>110</height>
+               </size>
+              </property>
+              <property name="title">
+               <string>Доп. параметры</string>
+              </property>
+              <widget class="QLabel" name="label_14">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>40</y>
+                 <width>703</width>
+                 <height>30</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Минимальный процент оценок у ученика за четверть (не включая Н и Б)</string>
+               </property>
+              </widget>
+              <widget class="QSpinBox" name="term_percent">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="geometry">
+                <rect>
+                 <x>740</x>
+                 <y>40</y>
+                 <width>100</width>
+                 <height>30</height>
+                </rect>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>70</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="suffix">
+                <string>%</string>
+               </property>
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="maximum">
+                <number>100</number>
+               </property>
+               <property name="value">
+                <number>30</number>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item row="13" column="0">
+             <spacer name="verticalSpacer_6">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>0</width>
+                <height>25</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="14" column="0">
+             <widget class="QCheckBox" name="check_double_two">
+              <property name="font">
+               <font>
+                <family>Calibri</family>
+                <pointsize>14</pointsize>
+               </font>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::RightToLeft</enum>
+              </property>
+              <property name="text">
+               <string>Не поставлено ли у ученика две двойки подряд</string>
+              </property>
+             </widget>
+            </item>
+            <item row="15" column="0">
+             <spacer name="verticalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>25</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="16" column="0">
+             <widget class="QCheckBox" name="check_term_marks">
+              <property name="font">
+               <font>
+                <family>Calibri</family>
+                <pointsize>14</pointsize>
+               </font>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::RightToLeft</enum>
+              </property>
+              <property name="text">
+               <string>Четвертные оценки</string>
+              </property>
+             </widget>
+            </item>
+            <item row="17" column="0" colspan="2">
+             <widget class="QGroupBox" name="groupBox_3">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>500</width>
+                <height>212</height>
+               </size>
+              </property>
+              <property name="title">
+               <string>Доп. параметры</string>
+              </property>
+              <widget class="QDoubleSpinBox" name="min_for_3">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="geometry">
+                <rect>
+                 <x>430</x>
+                 <y>150</y>
+                 <width>100</width>
+                 <height>30</height>
+                </rect>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>70</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="decimals">
+                <number>1</number>
+               </property>
+               <property name="minimum">
+                <double>2.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>3.000000000000000</double>
+               </property>
+               <property name="singleStep">
+                <double>0.100000000000000</double>
+               </property>
+               <property name="value">
+                <double>2.500000000000000</double>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_17">
+               <property name="geometry">
+                <rect>
+                 <x>21</x>
+                 <y>32</y>
+                 <width>370</width>
+                 <height>30</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Минимальный балл для четвертной 5</string>
+               </property>
+              </widget>
+              <widget class="QDoubleSpinBox" name="min_for_4">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="geometry">
+                <rect>
+                 <x>430</x>
+                 <y>90</y>
+                 <width>100</width>
+                 <height>30</height>
+                </rect>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>70</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="decimals">
+                <number>1</number>
+               </property>
+               <property name="minimum">
+                <double>3.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>4.000000000000000</double>
+               </property>
+               <property name="singleStep">
+                <double>0.100000000000000</double>
+               </property>
+               <property name="value">
+                <double>3.500000000000000</double>
+               </property>
+              </widget>
+              <widget class="QDoubleSpinBox" name="min_for_5">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="geometry">
+                <rect>
+                 <x>430</x>
+                 <y>30</y>
+                 <width>100</width>
+                 <height>30</height>
+                </rect>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>70</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="decimals">
+                <number>1</number>
+               </property>
+               <property name="minimum">
+                <double>4.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>5.000000000000000</double>
+               </property>
+               <property name="singleStep">
+                <double>0.100000000000000</double>
+               </property>
+               <property name="value">
+                <double>4.500000000000000</double>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_18">
+               <property name="geometry">
+                <rect>
+                 <x>21</x>
+                 <y>90</y>
+                 <width>370</width>
+                 <height>30</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Минимальный балл для четвертной 4</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_19">
+               <property name="geometry">
+                <rect>
+                 <x>21</x>
+                 <y>150</y>
+                 <width>370</width>
+                 <height>30</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Минимальный балл для четвертной 3</string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item row="19" column="0">
+             <widget class="QLabel" name="label_20">
+              <property name="font">
+               <font>
+                <family>Calibri</family>
+                <pointsize>14</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Как отсортировать таблицы?</string>
+              </property>
+             </widget>
+            </item>
+            <item row="20" column="0">
+             <widget class="QComboBox" name="group_by">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>171</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="editable">
+               <bool>false</bool>
+              </property>
+              <property name="currentText">
+               <string/>
+              </property>
+              <property name="currentIndex">
+               <number>-1</number>
+              </property>
+              <property name="maxVisibleItems">
+               <number>5</number>
+              </property>
+              <property name="maxCount">
+               <number>3</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_6">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>94</height>
+           </size>
+          </property>
+          <property name="title">
+           <string/>
+          </property>
+          <widget class="QProgressBar" name="progressBar">
+           <property name="geometry">
+            <rect>
+             <x>580</x>
+             <y>40</y>
+             <width>230</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>230</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="value">
+            <number>0</number>
+           </property>
+           <property name="textVisible">
+            <bool>true</bool>
+           </property>
+           <property name="invertedAppearance">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="start_check">
+           <property name="geometry">
+            <rect>
+             <x>360</x>
+             <y>20</y>
+             <width>211</width>
+             <height>50</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="MinimumExpanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>211</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Проверить</string>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="pb_label">
+           <property name="geometry">
+            <rect>
+             <x>580</x>
+             <y>20</y>
+             <width>311</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>230</width>
+             <height>15</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Инфо</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="report">
+       <attribute name="title">
+        <string>Отчет за четверть</string>
+       </attribute>
+       <widget class="QSpinBox" name="rep_term">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>30</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>4</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>30</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Четверть</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="start_grade">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>90</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>11</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>90</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>С какого класса</string>
+        </property>
+       </widget>
+       <widget class="QProgressBar" name="rep_progressBar">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>280</y>
+          <width>251</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="value">
+         <number>0</number>
+        </property>
+        <property name="textVisible">
+         <bool>true</bool>
+        </property>
+        <property name="invertedAppearance">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="create_report">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>170</y>
+          <width>211</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Создать отчет</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="rep_pb_label">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>250</y>
+          <width>321</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Инфо</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>950</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>check_lessons_fill</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>groupBox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>439</x>
+     <y>-110</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>453</x>
+     <y>-57</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>check_students_fill</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>groupBox_2</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>405</x>
+     <y>140</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>459</x>
+     <y>201</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>check_term_marks</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>groupBox_3</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>397</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>300</x>
+     <y>430</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>check_lessons_fill</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lesson_percent</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>430</x>
+     <y>-115</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>788</x>
+     <y>-44</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>check_lessons_fill</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>allowed_not_row</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>334</x>
+     <y>-105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>253</x>
+     <y>49</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>check_students_fill</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>term_percent</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>419</x>
+     <y>139</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>780</x>
+     <y>212</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>check_term_marks</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>min_for_5</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>188</x>
+     <y>398</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>501</x>
+     <y>470</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>check_term_marks</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>min_for_4</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>134</x>
+     <y>399</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>466</x>
+     <y>526</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>check_term_marks</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>min_for_3</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>116</x>
+     <y>396</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>485</x>
+     <y>584</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

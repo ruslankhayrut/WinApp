@@ -1,0 +1,7 @@
+.idea
+cr.pkl
+*.xlsx
+venv/
+build/
+dist/
+**/__pycache__/
