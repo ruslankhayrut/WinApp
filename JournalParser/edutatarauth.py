@@ -6,19 +6,19 @@ def edu_auth(login, password):
     s = requests.Session()
 
     s.headers.update({"Host": "edu.tatar.ru",
-                      "Origin": "https://edu.tatar.ru",
-                      "User-Agent": "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) \
-                                        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 \
-                                        YaBrowser/18.10.1.382 (beta) Yowser/2.5 Safari/537.36"
+                      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                                    "AppleWebKit/537.36 (KHTML, like Gecko) "
+                                    "Chrome/89.0.4389.90 Safari/537.36"
                       })
-    h = {"Referer": "https://edu.tatar.ru/start/logon-process", "Content-Type": "application/x-www-form-urlencoded"}
+    h = {"Referer": "https://edu.tatar.ru/logon",
+         }
 
     r = s.post("https://edu.tatar.ru/logon", headers=h,
                data={
-                   "redirect_url": "https://edu.tatar.ru/start/logon-process",
                    "main_login": login,
                    "main_password": password}
                )
+
     if 'Личный кабинет' in r.text:
         print('Успешный вход в аккаунт.')
     else:
