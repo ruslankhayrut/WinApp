@@ -192,11 +192,12 @@ class MyWindow(QtWidgets.QMainWindow):
             return login, password
 
     def check_login(self, login: str):
-        data = {'login': login}
-        r = requests.post('https://features.li79.ru/journal/lcheck', data)
-        r = r.json()
-
-        return r.get('status')
+        # data = {'login': login}
+        # r = requests.post('https://features.li79.ru/journal/lcheck', data)
+        # r = r.json()
+        #
+        # return r.get('status')
+        return 1
 
 
 
