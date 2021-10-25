@@ -15,8 +15,8 @@ def edu_auth(login, password):
 
     r = s.post("https://edu.tatar.ru/logon", headers=h,
                data={
-                   "main_login": login,
-                   "main_password": password}
+                   "main_login2": login,
+                   "main_password2": password}
                )
 
     if 'Личный кабинет' in r.text:
